@@ -10,5 +10,15 @@ body{
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: blur(1px);
+}
+
+h2{
+  text-decoration: underline;
+}
+
+.contenedor-info-form{
+  border: 1px solid rgb(168, 163, 163);
+  background-color: rgba(0, 0, 0, 0.534);
+  border-radius: 10px;
+  height: 30rem;
 }
