@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import FormularioTareas from "./components/FormularioTareas";
+import Footer from "./components/common/Footer";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -14,6 +15,7 @@ function App() {
           <FormularioTareas></FormularioTareas>
         </section>
       </main>
+      <Footer></Footer>
     </body>
   );
 }

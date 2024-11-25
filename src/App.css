@@ -6,10 +6,16 @@
 
 body{
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   background-image: url(../src//assets/fondo.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+main{
+  flex-grow: 1;
 }
 
 h2{
