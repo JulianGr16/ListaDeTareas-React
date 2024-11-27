@@ -1,7 +1,7 @@
-import { ListGroup } from "react-bootstrap";
+import { Button, ListGroup  } from "react-bootstrap";
 const ItemTarea = () => {
     return (
-            <ListGroup.Item as="li" className="bg-dark-subtle text-dark fw-light">Programar el boton de crear</ListGroup.Item>
+            <ListGroup.Item className="bg-dark-subtle text-dark fs-5 fw-lighter d-flex justify-content-between">Programar el boton de crear <Button variant="outline-danger" className="btn-borrar">Borrar</Button></ListGroup.Item>
     );
 };
 

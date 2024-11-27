@@ -9,7 +9,7 @@ const FormularioTareas = () => {
       <Form className="">
         <Form.Group className="mb-3 d-flex" controlId="formBasicEmail">
           <Form.Control type="text" placeholder="escribe alguna tarea..." className="me-1"/>
-          <Button variant="primary" type="submit">
+          <Button variant="outline-primary" type="submit">
           Crear
         </Button>
         </Form.Group>
