@@ -18,6 +18,13 @@ const FormularioTareas = () => {
     reset();
   }
 
+  const borrarTarea = (nombreTarea)=>{
+    //borrar la tarea del estado arrayTareas
+    const arrayFiltrado = arrayTareas.filter((tarea)=> tarea !== nombreTarea)
+    //actualizar el estado con la nueva lista del array
+    setArrayTareas(arrayFiltrado)
+  }
+
   return (
     <section className="container-fluid">
       <Form onSubmit={handleSubmit(onSubmit)}>
@@ -41,7 +48,7 @@ const FormularioTareas = () => {
         {errors.tarea?.message}
       </Form.Text>
       </Form>
-      <ListaTareas arrayTareas={arrayTareas}></ListaTareas>
+      <ListaTareas arrayTareas={arrayTareas} borrarTarea={borrarTarea}></ListaTareas>
     </section>
   );
 };
